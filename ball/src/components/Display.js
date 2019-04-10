@@ -47,6 +47,20 @@ class Display extends React.Component {
         })
     }
 
+    handleFoul = () => {
+        const strike = this.state.strike
+        const addOne = this.state.strike + 1
+        if(strike === 0) {
+            this.setState({
+                strike: addOne
+            })
+        } else if (strike === 1) {
+            this.setState({
+                strike: addOne
+            })
+        }
+    }
+
     render() {
         return (
             <div>
@@ -57,6 +71,7 @@ class Display extends React.Component {
                     handleStrike={this.handleStrike}
                     handleBall={this.handleBall}
                     handleHit={this.handleHit}
+                    handleFoul={this.handleFoul}
                 />
             </div>
         )

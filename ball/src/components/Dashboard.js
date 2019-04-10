@@ -12,7 +12,9 @@ const Dashboard = props => {
                 onClick={props.handleBall}
             >Ball</button>
 
-            <button>Foul</button>
+            <button
+                onClick={props.handleFoul}
+            >Foul</button>
 
             <button
                 onClick={props.handleHit}
