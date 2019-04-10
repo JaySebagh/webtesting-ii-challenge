@@ -40,6 +40,13 @@ class Display extends React.Component {
         }
     }
 
+    handleHit = () => {
+        this.setState({
+            strike: 0,
+            balls: 0
+        })
+    }
+
     render() {
         return (
             <div>
@@ -49,6 +56,7 @@ class Display extends React.Component {
                 <Dashboard 
                     handleStrike={this.handleStrike}
                     handleBall={this.handleBall}
+                    handleHit={this.handleHit}
                 />
             </div>
         )

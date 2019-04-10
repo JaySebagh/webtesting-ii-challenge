@@ -14,7 +14,9 @@ const Dashboard = props => {
 
             <button>Foul</button>
 
-            <button>Hit</button>
+            <button
+                onClick={props.handleHit}
+            >Hit</button>
         </div>
     )
 }
