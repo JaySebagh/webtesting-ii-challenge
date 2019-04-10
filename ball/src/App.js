@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Display from './components/Display.js'
-import Dashboard from './components/Dashboard.js'
 
 class App extends Component {
   render() {
@@ -9,7 +8,6 @@ class App extends Component {
       <div className="App">
         <h1>Beep Boop, App Alive.</h1>
         <Display />
-        <Dashboard />
       </div>
     );
   }
